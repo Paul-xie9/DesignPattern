@@ -52,12 +52,15 @@ abstract class Builder {
 
 //具体的建造者，实现抽象的建造
 class ConcreteBuilder extends Builder {
+    @Override
     public void buildPartA() {
         product.setPartA("建造 PartA");
     }
+    @Override
     public void buildPartB() {
         product.setPartB("建造 PartB");
     }
+    @Override
     public void buildPartC() {
         product.setPartC("建造 PartC");
     }
